@@ -3,6 +3,7 @@ import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import elipsis from "@/../public/images/icon-ellipsis.svg";
 
 type TTimeFrame = {
   current: number;
@@ -71,11 +72,19 @@ export const ActivityCard = ({ title, icon, timeframe, timeframes }: any) => {
           alt={"Work Icon"}
         />
       </div>
-      <Card className="relative z-10 -mt-[115px] h-[199px] rounded-[15px]">
-        <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          <Button variant="outline" size="icon">
-            <ChevronRightIcon className="h-4 w-4" />
+      <Card className="relative z-10 -mt-[115px] h-[199px] rounded-[15px] border-none bg-dark-blue text-white">
+        <CardHeader className="align-center -mr-2 -mt-[6px] flex h-[22px] flex-row justify-between">
+          <CardTitle className="mt-[6px] w-max">{title}</CardTitle>
+          <Button
+            className="max-h-[22px] border-none bg-inherit"
+            variant="outline"
+            size="icon"
+          >
+            <Image
+              className="fill-desaturated-blue"
+              src={elipsis}
+              alt={"Ellipsis Icon"}
+            />
           </Button>
         </CardHeader>
         <CardContent>

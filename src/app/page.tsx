@@ -61,7 +61,6 @@ export default async function Home() {
             const timeframes = activity?.timeframes;
             const timeframe = "monthly";
 
-            console.log("activity", activity);
             return (
               <ActivityCard
                 key={index}

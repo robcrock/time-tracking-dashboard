@@ -2,6 +2,7 @@ export async function GET() {
   const res = [
     {
       title: "Work",
+      icon: "icon_work",
       timeframes: {
         daily: {
           current: 5,
@@ -19,6 +20,7 @@ export async function GET() {
     },
     {
       title: "Play",
+      icon: "icon_play",
       timeframes: {
         daily: {
           current: 1,
@@ -36,6 +38,7 @@ export async function GET() {
     },
     {
       title: "Study",
+      icon: "icon_study",
       timeframes: {
         daily: {
           current: 0,
@@ -53,6 +56,7 @@ export async function GET() {
     },
     {
       title: "Exercise",
+      icon: "icon_exercise",
       timeframes: {
         daily: {
           current: 1,
@@ -70,6 +74,7 @@ export async function GET() {
     },
     {
       title: "Social",
+      icon: "icon_social",
       timeframes: {
         daily: {
           current: 1,
@@ -87,6 +92,7 @@ export async function GET() {
     },
     {
       title: "Self Care",
+      icon: "icon_self_care",
       timeframes: {
         daily: {
           current: 0,

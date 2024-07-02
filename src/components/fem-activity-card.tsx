@@ -72,9 +72,9 @@ export const ActivityCard = ({ title, icon, timeframe, timeframes }: any) => {
           alt={"Work Icon"}
         />
       </div>
-      <Card className="relative z-10 -mt-[115px] h-[199px] rounded-[15px] border-none bg-dark-blue text-white">
+      <Card className="relative z-10 -mt-[115px] flex h-[199px] flex-col justify-between rounded-[15px] border-none bg-dark-blue text-white">
         <CardHeader className="align-center -mr-2 -mt-[6px] flex h-[22px] flex-row justify-between">
-          <CardTitle className="mt-[6px] w-max">{title}</CardTitle>
+          <CardTitle className="mt-[6px] w-max font-medium">{title}</CardTitle>
           <Button
             className="max-h-[22px] border-none bg-inherit"
             variant="outline"
@@ -87,9 +87,11 @@ export const ActivityCard = ({ title, icon, timeframe, timeframes }: any) => {
             />
           </Button>
         </CardHeader>
-        <CardContent>
-          <p>{currLabel}</p>
-          <p>{prevLabel}</p>
+        <CardContent className="flex flex-col">
+          <p className="text-[56px] font-extralight leading-[64px]">
+            {currLabel}
+          </p>
+          <p className="font-light text-pale-blue">{prevLabel}</p>
         </CardContent>
       </Card>
     </div>

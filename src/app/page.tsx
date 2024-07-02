@@ -6,6 +6,7 @@ import icon_study from "@/../public/images/icon-study.svg";
 import icon_exercise from "@/../public/images/icon-exercise.svg";
 import icon_social from "@/../public/images/icon-social.svg";
 import icon_self_care from "@/../public/images/icon-self-care.svg";
+import { ProfileCard } from "@/components/fem-profile-card";
 
 type TTimeFrame = {
   current: number;
@@ -40,20 +41,10 @@ export default async function Home() {
   const data = await getData();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-very-dark-blue p-24">
       {/* Card - Personal */}
       <div className="grid grid-cols-4 gap-[30px]">
-        <Card>
-          <CardHeader>
-            <p> Report for</p>
-            <CardTitle>Jeremy Robson</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Daily</p>
-            <p>Weekly</p>
-            <p>Monthly</p>
-          </CardContent>
-        </Card>
+        <ProfileCard />
         <div className="col-span-3 grid grid-cols-subgrid gap-[30px]">
           {data.map((activity, index) => {
             const title = activity?.title;

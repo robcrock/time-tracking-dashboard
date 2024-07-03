@@ -1,5 +1,3 @@
-export const dynamic = "force-dynamic";
-
 import { CardGrid, iconMap } from "@/components/fem-card-grid";
 
 type TTimeFrame = {

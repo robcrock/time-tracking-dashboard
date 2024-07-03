@@ -17,7 +17,7 @@ type TActivity = {
 
 export default async function Home() {
   const getData = async (): Promise<TActivity[]> => {
-    const res = await fetch("http://localhost:3000/api/");
+    const res = await fetch(`${process.env.NEXT_URL}/api/`);
     return res.json();
   };
 

@@ -58,7 +58,7 @@ export const ActivityCard = ({ title, icon, timeframe, timeframes }: any) => {
   const prevLabel = generatePrevLabel(timeframes, timeframe);
 
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex w-[255px] flex-col">
       <div
         className={cn(
           "relative h-[160px] overflow-hidden rounded-[15px] bg-light-red-work",

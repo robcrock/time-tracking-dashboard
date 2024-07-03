@@ -13,7 +13,7 @@ export const ProfileCard = ({
   handleSelection,
 }: TProfileProps) => {
   return (
-    <Card className="relative flex h-full w-full flex-col overflow-hidden rounded-[15px] border-2 border-none border-red-400 bg-dark-blue text-white md:row-span-2 md:h-full md:w-[255px]">
+    <Card className="flex h-full w-full flex-col overflow-hidden rounded-[15px] border-2 border-none border-red-400 bg-dark-blue text-white md:row-span-2 md:h-full md:w-[255px]">
       <UserLayer />
       <TimeframeLayer
         activeTimeframe={activeTimeframe}
@@ -25,7 +25,7 @@ export const ProfileCard = ({
 
 const UserLayer = () => {
   return (
-    <CardHeader className="z-10 flex h-[133px] flex-row items-center gap-5 rounded-[15px] bg-blue px-8 py-[32px] md:h-[354px] md:min-h-[354px] md:flex-col md:gap-[43px] md:px-[37px]">
+    <CardHeader className="z-10 flex h-[133px] flex-row items-center gap-5 rounded-[15px] bg-blue px-8 py-[32px] md:h-[354px] md:min-h-[354px] md:flex-col md:items-start md:gap-[43px] md:px-[37px]">
       <Avatar className="h-[78px] w-[78px] border-2 border-white">
         <AvatarImage src="https://raw.githubusercontent.com/robcrock/time-tracking-dashboard/main/public/images/image-jeremy.png" />
         <AvatarFallback>JR</AvatarFallback>

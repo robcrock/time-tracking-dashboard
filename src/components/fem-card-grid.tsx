@@ -9,7 +9,7 @@ import icon_exercise from "@/../public/images/icon-exercise.svg";
 import icon_social from "@/../public/images/icon-social.svg";
 import icon_self_care from "@/../public/images/icon-self-care.svg";
 
-const iconMap = {
+export const iconMap = {
   icon_work: icon_work,
   icon_play: icon_play,
   icon_study: icon_study,
@@ -31,9 +31,9 @@ export const CardGrid = ({ data }: { data: any }) => {
         handleSelection={handleSelection}
       />
       <div className="col-span-3 grid grid-cols-subgrid gap-[30px]">
-        {data.map((activity, index) => {
+        {data.map((activity: any, index: number) => {
           const title = activity?.title;
-          const icon = activity?.icon;
+          const icon: keyof typeof iconMap = activity?.icon;
           const timeframes = activity?.timeframes;
           const timeframe = "monthly";
 

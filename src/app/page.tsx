@@ -1,4 +1,4 @@
-import { CardGrid } from "@/components/fem-card-grid";
+import { CardGrid, iconMap } from "@/components/fem-card-grid";
 
 type TTimeFrame = {
   current: number;

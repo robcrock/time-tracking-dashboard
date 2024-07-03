@@ -25,12 +25,12 @@ export const CardGrid = ({ data }: { data: any }) => {
     setActiveTimeframe(activeTimeframe);
 
   return (
-    <div className="grid grid-cols-4 gap-[30px]">
+    <div className="grid grid-cols-1 gap-[30px] md:grid-cols-4">
       <ProfileCard
         activeTimeframe={activeTimeframe}
         handleSelection={handleSelection}
       />
-      <div className="col-span-3 grid grid-cols-subgrid gap-[30px]">
+      <div className="grid gap-[30px] md:col-span-3 md:grid-cols-subgrid">
         {data.map((activity: any, index: number) => {
           const title = activity?.title;
           const icon: keyof typeof iconMap = activity?.icon;

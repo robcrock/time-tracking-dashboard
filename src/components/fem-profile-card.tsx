@@ -48,7 +48,7 @@ const TimeframeLayer = ({
     <CardContent className="flex h-full w-full flex-row justify-between bg-dark-blue p-4 text-left font-light text-white md:flex-col md:items-start md:justify-end md:p-6">
       <Button
         className={cn(
-          "bg-inherit text-[18px] font-light",
+          "bg-inherit text-[18px] font-light hover:text-white hover:no-underline",
           activeTimeframe === "daily" ? "text-white" : "text-pale-blue",
         )}
         variant="link"
@@ -58,7 +58,7 @@ const TimeframeLayer = ({
       </Button>
       <Button
         className={cn(
-          "bg-inherit text-[18px] font-light",
+          "bg-inherit text-[18px] font-light hover:text-white hover:no-underline",
           activeTimeframe === "weekly" ? "text-white" : "text-pale-blue",
         )}
         variant="link"
@@ -68,7 +68,7 @@ const TimeframeLayer = ({
       </Button>
       <Button
         className={cn(
-          "bg-inherit text-[18px] font-light",
+          "bg-inherit text-[18px] font-light hover:text-white hover:no-underline",
           activeTimeframe === "monthly" ? "text-white" : "text-pale-blue",
         )}
         variant="link"

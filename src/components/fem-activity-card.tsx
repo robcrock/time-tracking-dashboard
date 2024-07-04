@@ -50,7 +50,8 @@ const generatePrevLabel = (
     prefix = `Last month -`;
   }
 
-  return `${prefix} ${timeframes[timeframe].previous}`;
+  const suffix = timeframes[timeframe].previous === 1 ? "hr" : "hrs";
+  return `${prefix} ${timeframes[timeframe].previous}${suffix}`;
 };
 export const ActivityCard = ({ title, icon, timeframe, timeframes }: any) => {
   const bgColor = generateBgColor(title);

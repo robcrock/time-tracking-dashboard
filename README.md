@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![alt text](image.png)
+![Screenshot](image-1.png)
 
 ### Links
 

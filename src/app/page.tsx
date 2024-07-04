@@ -24,7 +24,7 @@ export default async function Home() {
   const data = await getData();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-6 md:mt-[253px] md:p-24">
+    <main className="md:p-none flex min-h-screen items-center justify-center p-6">
       {/* Card - Personal */}
       <CardGrid data={data} />
     </main>
